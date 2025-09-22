@@ -1,4 +1,4 @@
-# Hook RDMA POST SEND ADN POLL CQ
+# Hook RDMA POST SEND and POLL CQ
 
 ## Post send和Poll cq
 需要在`ibv_open_device`返回后替换对应的函数指针：
