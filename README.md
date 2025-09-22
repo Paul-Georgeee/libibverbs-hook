@@ -39,7 +39,7 @@ gcc -shared -fPIC -o libhook.so rdma_hook.c hash_table.c -ldl
 
 运行
 ```bash
-LD_PRELOAD=rdma-hook/libhook.so ib_send_bw -d mlx5_0 -n 10 -s 1048576 --report_gbits --use_old_post 10.0.0.14
+LD_PRELOAD=libhook.so ib_send_bw -d mlx5_0 -n 10 -s 1048576 --report_gbits --use_old_post 10.0.0.14
 ---------------------------------------------------------------------------------------
                     Send BW Test
  Dual-port       : OFF		Device         : mlx5_0
