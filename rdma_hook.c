@@ -57,7 +57,6 @@ struct ibv_cq *ibv_create_cq(struct ibv_context *context, int cqe, void *cq_cont
 		.cqe = cqe,
 		.comp_vector = comp_vector,
 		.channel = channel,
-		.wc_flags = 0,
 		.comp_mask = 0,
 		.cq_context = cq_context,
 		.wc_flags = IBV_WC_EX_WITH_COMPLETION_TIMESTAMP
